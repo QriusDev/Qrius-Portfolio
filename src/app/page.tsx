@@ -17,13 +17,13 @@ export default function Home() {
         </div>
         <div className="flex gap-8">
           <a
-            href="/about"
+            href="/"
             className="text-lg text-white hover:underline hover:underline-offset-4"
           >
             About
           </a>
           <a
-            href="/contact"
+            href="/"
             className="text-lg text-white hover:underline hover:underline-offset-4"
           >
             Contact

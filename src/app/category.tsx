@@ -57,8 +57,7 @@ export default function Category({
               </button>
             </div>
             <p className="text-lg mb-4" style={{ color:"black" }}>
-              This is a description for the {title} category. You can customize
-              this text as needed.
+              Woops! I haven't added functionlity for the {title} category yet. Come back later!
             </p>
             <ul className="list-disc pl-5" style={{ color:"black" }}>
               <li>Object 1</li>

@@ -8,7 +8,7 @@ FROM base AS builder
 WORKDIR /app
 COPY . .
 
-FROM base AS production
+FROM base AS prod
 WORKDIR /app
 ENV NODE_ENV=production
 RUN npm ci
@@ -20,6 +20,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/public ./public
+RUN npm run build
 CMD ["npm", "run", "start"]
 
 FROM base AS dev
