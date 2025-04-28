@@ -1,3 +1,4 @@
+import CardWidget from "app/widgets/card-widget";
 import GalleryWidget from "app/widgets/gallery-widget";
 import Image from "next/image";
 
@@ -20,16 +21,7 @@ export default function IntroSectionView() {
         </div>
         <div>
             <GalleryWidget>
-                <div className="outline-1 outline-gray-700 bg-white text-black p-10 mx-8 h-96 w-96">
-                    <p className="text-lg font-bold text-left mb-4">
-                        Intro Card!
-                    </p>
-                    <hr/>
-                    <br/>
-                    <p className="text-md max-w-2xl">
-                        Welcome to my website! I hope you enjoy your stay.
-                    </p>
-                    <br/>
+                <CardWidget title="Intro Card!" description="Welcome to my website! I hope you enjoy your stay.">
                     <Image
                         src="/cat-work-icon-text-outline-dropshadow-colored.png"
                         alt="Cat Icon"
@@ -37,18 +29,15 @@ export default function IntroSectionView() {
                         height={160}
                         className="inline-block ml-2"
                         />
-                </div>
-                <div className="outline-1 outline-gray-700 bg-white text-black mx-8 p-10 h-96 w-96">
-                    <p className="text-lg font-bold text-left mb-4">
-                        Forward always!
-                    </p>
-                    <hr/>
-                    <br/>
-                    <p className="text-md max-w-2xl">
-                        I’m constantly working to improve myself and learn new things, so
-                        expect all sorts of projects and project types! 
-                    </p>
-                </div>
+                </CardWidget>
+                <CardWidget
+                    title="Forward always!"
+                    description="I&apos;m constantly working to improve myself and learn new things, so expect all sorts of projects and project types!">
+                </CardWidget>
+                <CardWidget
+                    title="Why cats?"
+                    description="Because 'curiosity killed the cat'! But that doesn't mean that it's bad to be Qrius!">
+                </CardWidget>
             </GalleryWidget>
         </div>
     </>
