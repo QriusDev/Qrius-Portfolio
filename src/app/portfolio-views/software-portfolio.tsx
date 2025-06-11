@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Project = {
@@ -34,7 +35,7 @@ export default function SoftwarePortfolio() {
           <details key={idx} className="mb-4 border rounded-lg p-4 bg-gray-50">
             <summary className="cursor-pointer text-xl font-semibold text-black">{project.title}</summary>
             <div className="mt-2 flex flex-col sm:flex-row gap-4">
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 width={160}

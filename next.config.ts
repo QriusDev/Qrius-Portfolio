@@ -5,4 +5,10 @@ const nextConfig: NextConfig = {
   'output': 'standalone'
 };
 
+module.exports = {
+  images: {
+    remotePatterns: [new URL('https://storage.googleapis.com/qrius-portfolio-assets/images/**'), new URL('https://github.com/QriusDev/**'), new URL('https://i1.sndcdn.com/**')]
+  }
+}
+
 export default nextConfig;

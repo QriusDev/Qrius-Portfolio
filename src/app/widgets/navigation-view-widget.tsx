@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function NavigationViewWidget() {
     return (
         <nav className="row-start-1 w-full flex justify-between items-center sm:pt-20 sm:pb-5 sm:pr-20 bg-[#000000] outline-1 z-10">
             <Link href="/" className="ml-10 flex items-center gap-4 hover:scale-105 transform transition-transform">
-                <img
+                <Image
                 src="https://storage.googleapis.com/qrius-portfolio-assets/images/misc/qrius-alex-profile-pic.jpg"
                 alt="Qrius Alex Site Logo"
                 width={75}

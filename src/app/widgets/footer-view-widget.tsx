@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function FooterViewWidget() {
   return (
     <footer className="row-start-3 w-full flex justify-center items-center px-8 sm:px-20 py-4 bg-[#383846] shadow-md rounded-lg">

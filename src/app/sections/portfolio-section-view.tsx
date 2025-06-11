@@ -14,7 +14,7 @@ export default function PortfolioSectionView() {
         <div id="portfolio" className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-12 justify-items-center">
             <CategoryWidget
             title="Software"
-            icon="/software-icon-outline-dropshadow-colored.png"
+            icon="https://storage.googleapis.com/qrius-portfolio-assets/images/misc/software-icon-outline-dropshadow-colored.png"
             alt="Software Icon"
             color="#D04848">
               <SoftwarePortfolio />
@@ -22,20 +22,20 @@ export default function PortfolioSectionView() {
             <CategoryWidget
             title="Music"
             alt="Music Icon"
-            icon="/qrius-listening-icon-outline-dropshadow-greyscale.png"
+            icon="https://storage.googleapis.com/qrius-portfolio-assets/images/misc/qrius-listening-icon-outline-dropshadow-greyscale.png"
             color="#DCC045">
               <MusicPortfolio />
             </CategoryWidget>
             <CategoryWidget
             title="Games"
-            icon="/joystick-logo-outline-dropshadow-black.png"
+            icon="https://storage.googleapis.com/qrius-portfolio-assets/images/misc/joystick-logo-outline-dropshadow-black.png"
             alt="Games Icon"
             color="#685BD1">
               <GamesPortfolio />
             </CategoryWidget>
             <CategoryWidget
             title="Art"
-            icon="/qrius-paint-brush-icon-outline-dropshadow-greyscale.png"
+            icon="https://storage.googleapis.com/qrius-portfolio-assets/images/misc/qrius-paint-brush-icon-outline-dropshadow-greyscale.png"
             alt="Art Icon"
             color="#48D09C">
               <NoPortfolio />

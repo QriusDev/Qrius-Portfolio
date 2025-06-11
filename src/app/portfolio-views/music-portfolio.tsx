@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Project = {
@@ -39,7 +40,7 @@ export default function MusicPortfolio() {
               {project.title}
             </summary>
             <div className="mt-2 flex flex-col sm:flex-row gap-4">
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 width={160}

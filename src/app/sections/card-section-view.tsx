@@ -8,7 +8,7 @@ export default function CardSectionView() {
             <GalleryWidget>
                 <CardWidget title="Intro Card!" description="Welcome to my website! I hope you enjoy your stay.">
                     <Image
-                    src="/cat-work-icon-text-outline-dropshadow-colored.png"
+                    src="https://storage.googleapis.com/qrius-portfolio-assets/images/misc/cat-work-icon-text-outline-dropshadow-colored.png"
                     alt="Cat Icon"
                     width={160}
                     height={160}
