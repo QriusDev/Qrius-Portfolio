@@ -1,4 +1,14 @@
-export default function CategoryViewWidget({isClosing, handleClose, title}: {isClosing: boolean, handleClose: () => void, title: string}) {
+export default function CategoryViewWidget({
+  children,
+  isClosing, 
+  handleClose, 
+  title
+}: {
+  children: React.ReactNode,
+  isClosing: boolean, 
+  handleClose: () => void, 
+  title: string
+}) {
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div
@@ -15,14 +25,13 @@ export default function CategoryViewWidget({isClosing, handleClose, title}: {isC
                 ✖
               </button>
             </div>
-            <p className="text-lg mb-4" style={{ color:"black" }}>
-              Woops! I haven&apos;t added functionlity for the {title} category yet. Come back later!
-            </p>
-            <ul className="list-disc pl-5" style={{ color:"black" }}>
-              <li>Object 1</li>
-              <li>Object 2</li>
-              <li>Object 3</li>
-            </ul>
+            {children ? (
+              <div className="mb-4">{children}</div>
+            ) : (
+              <p className="text-lg mb-4" style={{ color:"black" }}>
+                Woops! I haven&apos;t added functionality for the {title} category yet. Come back later!
+              </p>
+            )}
           </div>
         </div>
     );

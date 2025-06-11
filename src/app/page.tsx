@@ -1,6 +1,7 @@
 import SectionViewWidget from "./widgets/section-view-widget";
 import IntroSectionView from "./sections/intro-section-view";
 import PortfolioSectionView from "./sections/portfolio-section-view";
+import CardSectionView from "./sections/card-section-view";
 
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
         <IntroSectionView />
       </SectionViewWidget>
       <SectionViewWidget>
+        <CardSectionView />
+      </SectionViewWidget>
+      <SectionViewWidget extraStyle="bg-white">
         <PortfolioSectionView />
       </SectionViewWidget>
     </main>
