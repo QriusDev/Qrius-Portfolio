@@ -1,4 +1,16 @@
+'use client'
+
+import React, { useCallback } from "react";
+
 export default function IntroSectionView() {
+  const handlePortfolioClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const section = document.getElementById("portfolio");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <section className="w-full min-h-screen flex flex-col justify-center items-center px-4 py-8 md:px-12 lg:px-24 box-border">
       <div className="pb-5 hover:scale-105 transition-transform duration-300 w-full max-w-5xl mx-auto">
@@ -16,6 +28,7 @@ export default function IntroSectionView() {
         <div className="flex justify-center">
           <a
             href="#portfolio"
+            onClick={handlePortfolioClick}
             className="basis-1/8 items-center justify-center m-5 p-5 outline-1 text-black bg-white transform transition-transform hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer rounded-lg shadow"
           >
             Portfolio
