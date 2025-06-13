@@ -10,7 +10,7 @@ export default function Home() {
       <SectionViewWidget noTopPadding={true}>
         <IntroSectionView />
       </SectionViewWidget>
-      <SectionViewWidget>
+      <SectionViewWidget noTopPadding={true}>
         <CardSectionView />
       </SectionViewWidget>
       <SectionViewWidget extraStyle="bg-white">
