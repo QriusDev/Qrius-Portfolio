@@ -8,10 +8,10 @@ import CategoryWidget from "app/widgets/category-widget";
 export default function PortfolioSectionView() {
   return (
     <>
-        <h1 className="col-span-full text-3xl font-bold text-black">Portfolio</h1>
+        <h1 id="portfolio" className="col-span-full text-3xl font-bold text-black">Portfolio</h1>
         <p className="col-span-full text-2xl text-black">Here are some of my projects and works across various categories. More coming soon!</p>
         <hr />
-        <div id="portfolio" className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-12 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-12 justify-items-center">
             <CategoryWidget
             title="Software"
             icon="https://storage.googleapis.com/qrius-portfolio-assets/images/misc/software-icon-outline-dropshadow-colored.png"
