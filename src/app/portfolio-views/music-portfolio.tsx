@@ -7,9 +7,18 @@ type Project = {
   image: string;
   link: string;
   musicSrc?: string; // Optional music source
+  spotifyLink?: string; // Optional Spotify link
 };
 
 const projects: Project[] = [
+  {
+    title: "Power Lions",
+    description: "A song I began making for a commission but it went its own direction. Its a groove!",
+    image: "https://storage.googleapis.com/qrius-portfolio-assets/images/powerlions_cover.jpg",
+    link: "https://drive.google.com/file/d/1vQ6fE6L9B0T9IQosC_UKD5sQjnWBTE2M/view?usp=sharing",
+    musicSrc: "https://storage.googleapis.com/qrius-portfolio-assets/music/PowerLions_Master(4).mp3",
+    spotifyLink: "https://open.spotify.com/track/2D1omufpsc9zXDj6G1wKRy?si=660b03221f5d406b",
+  },
   {
     title: "Lyst",
     description: "The song that started it all! A song for a game that I'm writing. This will be the main theme to the game, and I hope to release it in 2024. This song is a mix of electronic and orchestral music, and I think it turned out really well. Still a work in progress as I add more to the game.",
@@ -53,10 +62,20 @@ export default function MusicPortfolio() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-2 px-4 py-2 bg-blue-600 text-black rounded hover:bg-blue-700 transition"
+                  className="inline-block mt-2 mx-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
                 >
                   View Project
                 </a>
+                {project.spotifyLink && (
+                  <a
+                    href={project.spotifyLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-2 mx-2 px-4 py-2 bg-green-600 text-black rounded hover:bg-green-700 transition"
+                  >
+                    Listen on Spotify
+                  </a>
+                )}
                 {/* Show music player inside expanded section as well */}
                 {project.musicSrc && (
                     <audio controls className="mt-4 rounded-md border group-open:block hidden w-full">
