@@ -10,6 +10,12 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Caticoe (WIP)",
+    description: "A Progressive \"Space-Linking\" Strategy Game where players advance a graph of linked spaces to achieve the goal of placing some assortment of pieces in a format (aka. 3/4 in-a-row, islands of similar pieces, and 3 dimensional patterns) before the other player to win the game.",
+    image: "https://storage.googleapis.com/qrius-portfolio-assets/images/project-covers/caticoe_design_blueprint.jpg",
+    link: "https://github.com/QriusDev/Caticoe",
+  },
+  {
     title: "Qrius Player",
     description: "A media player for websites and streaming purposes. Built with HTML5 and JavaScript for easy integration.",
     image: "https://github.com/QriusDev/QriusPlayer/raw/master/examples/example2.png",

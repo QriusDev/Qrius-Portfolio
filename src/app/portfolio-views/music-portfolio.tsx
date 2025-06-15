@@ -5,11 +5,12 @@ type Project = {
   title: string;
   description: string;
   image: string;
-  link: string;
+  link?: string;
   musicSrc?: string; // Optional music source
   spotifyLink?: string; // Optional Spotify link
 };
 
+// This'll be converted to a database in the future, but for now, this is fine.
 const projects: Project[] = [
   {
     title: "Power Lions",
@@ -18,6 +19,12 @@ const projects: Project[] = [
     link: "https://drive.google.com/file/d/1vQ6fE6L9B0T9IQosC_UKD5sQjnWBTE2M/view?usp=sharing",
     musicSrc: "https://storage.googleapis.com/qrius-portfolio-assets/music/PowerLions_Master(4).mp3",
     spotifyLink: "https://open.spotify.com/track/2D1omufpsc9zXDj6G1wKRy?si=660b03221f5d406b",
+  },
+  {
+    title: "Sleeping Alone",
+    description: "Sleeping Alone.",
+    image: "https://storage.googleapis.com/qrius-portfolio-assets/images/SleepingAlone_Cover.jpg",
+    musicSrc: "https://storage.googleapis.com/qrius-portfolio-assets/music/SleepingAlone_146BPM_Gm(5).mp3",
   },
   {
     title: "Lyst",
@@ -58,14 +65,16 @@ export default function MusicPortfolio() {
               />
               <div className="flex-1">
                 <p className="mb-2 text-gray-700">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-2 mx-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-                >
-                  View Project
-                </a>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-2 mx-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                  >
+                    View Project
+                  </a>
+                )}
                 {project.spotifyLink && (
                   <a
                     href={project.spotifyLink}
