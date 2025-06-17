@@ -16,6 +16,12 @@ const projects: Project[] = [
     link: "https://github.com/QriusDev/Caticoe",
   },
   {
+    title: "Qrius Alex (Personal Website & Portfolio)",
+    description: "A personal website and portfolio showcasing my projects, skills, and experiences. Built with React, Next.js, Tailwind CSS, and Copilot.",
+    image: "https://storage.googleapis.com/qrius-portfolio-assets/images/project-covers/PortfolioSite.jpg",
+    link: "https://qriusalex.com",
+  },
+  {
     title: "Qrius Player",
     description: "A media player for websites and streaming purposes. Built with HTML5 and JavaScript for easy integration.",
     image: "https://github.com/QriusDev/QriusPlayer/raw/master/examples/example2.png",

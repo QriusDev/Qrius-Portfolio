@@ -1,5 +1,5 @@
 export default function SectionViewWidget({children, reactOnHover, noTopPadding, extraStyle}: {children: React.ReactNode, reactOnHover?: boolean, noTopPadding?: boolean, extraStyle?: string}) {
-    let className = "flex flex-col pb-2 items-center w-full px-50 text-white"
+    let className = "flex flex-col sm:col-span-1 w-full items-center px-10 sm:px-5 text-white"
     if (reactOnHover) {
         className += "transform transition-transform hover:scale-105"
     }
@@ -16,8 +16,8 @@ export default function SectionViewWidget({children, reactOnHover, noTopPadding,
     }
 
     return (
-    <div className={className}>
+    <section className={className}>
         {children}
-    </div>
+    </section>
   );
 }

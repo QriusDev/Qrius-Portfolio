@@ -12,8 +12,8 @@ export default function IntroSectionView() {
   }, []);
 
   return (
-    <section className="w-full min-h-screen flex flex-col justify-center items-center px-4 py-8 md:px-12 lg:px-24 box-border">
-      <div className="pb-5 hover:scale-105 transition-transform duration-300 w-full max-w-5xl mx-auto">
+    <>
+      <div className="pb-5 hover:scale-105 transition-transform duration-300 w-full mx-auto">
         <h2 className="text-4xl sm:text-6xl md:text-8xl font-bold py-10 text-center">
           Welcome to my Quest Museum!
         </h2>
@@ -35,6 +35,6 @@ export default function IntroSectionView() {
           </a>
         </div>
       </div>
-    </section>
+    </>
   );
 }

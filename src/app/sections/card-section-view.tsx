@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function CardSectionView() {
     return (
-        <section className="w-full max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">Some Thoughts on Cards</h2>
+        <>
+            <h1 className="text-5xl font-bold text-center mb-14">Some Thoughts on Cards</h1>
             <GalleryWidget>
                 <CardWidget title="Intro Card!" description="Welcome to my website! I hope you enjoy your stay.">
                     <Image
@@ -29,6 +29,6 @@ export default function CardSectionView() {
                     description="My growth is showing and I've never been happier or felt more skilled in my life! The projects that are in the works are exciting and I can't wait for them to be fully realized. "
                 />
             </GalleryWidget>
-        </section>
+        </>
     );
 }

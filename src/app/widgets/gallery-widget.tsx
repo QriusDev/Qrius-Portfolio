@@ -31,11 +31,11 @@ export default function GalleryWidget({children} : {children: React.ReactNode}) 
 
     return (
         <>
-            <div className="flex flex-row justify-items-center items-center">
+            <div className="flex flex-col gap-8 sm:flex-row sm:justify-center items-center">
                 <button onClick={handleClick_Prev} className="basis-1/8 items-center justify-center p-3 outline-1 text-white bg-black transform transition-transform hover:scale-105 hover:bg-white hover:text-black hover:cursor-pointer">
                     Prev
                 </button>
-                <div className="basis-6/8 items-center justify-items-center transform transition-transform hover:scale-105">
+                <div className="items-center justify-items-center transform transition-transform hover:scale-105">
                     {children && itemList[index]}
                 </div>
                 <button onClick={handleClick_Next} className="basis-1/8 items-center justify-center p-3 outline-1 text-white bg-black transform transition-transform hover:scale-105 hover:bg-white hover:text-black hover:cursor-pointer">

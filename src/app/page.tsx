@@ -7,8 +7,8 @@ import BlogCarousel from "./sections/blog-carousel-section-view";
 
 export default function Home() {
   return (
-    <main className="flex flex-col row-start-2 items-center sm:items-start text-center">
-      <SectionViewWidget noTopPadding={true}>
+    <main className="flex flex-col row-start-2">
+      <SectionViewWidget>
         <IntroSectionView />
       </SectionViewWidget>
       <SectionViewWidget extraStyle="bg-white">

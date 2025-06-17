@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Qrius Alex Portfolio",
-  description: "My portfolio site, where I document my projects and interests.",
+  title: "Qrius Alex",
+  description: "My personal website to document my projects, ideas, and interests.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="grid grid-rows-[5em_1fr_5em] gap-20 items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+        <div className="grid grid-cols-1 grid-rows-[5em_1fr_5em] gap-20 md:gap-0 items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
           <NavigationViewWidget />
           {children}
           <FooterViewWidget />

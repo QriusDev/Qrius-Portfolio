@@ -44,9 +44,9 @@ export default function CategoryWidget({
   }, []);
 
   // Calculate the size for a square button based on the current width or height
-  const size = Math.max(width, height, 320); // fallback to 320px minimum
+  const size = Math.max(width, height, 400); // fallback to 320px minimum
 
-  const processedClassName = `flex flex-col bg-black outline-1 items-center justify-center text-white hover:cursor-pointer hover:shadow-lg shadow-white transform transition-transform hover:scale-105`;
+  const processedClassName = `flex flex-col bg-black outline-1 items-center justify-center text-white hover:cursor-pointer hover:shadow-lg transform transition-transform hover:scale-105`;
 
   return (
     <>

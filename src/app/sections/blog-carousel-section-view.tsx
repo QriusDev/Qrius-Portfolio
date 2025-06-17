@@ -6,18 +6,18 @@ export default function BlogCarousel() {
     const postIds = [0, 1, 2]; // Add more post IDs as needed
     return (
         <>
-            <h1 className="text-5xl font-bold mb-6 text-black">Blog Posts</h1>
-            <p className="text-lg text-gray-700 mb-12">
+            <h1 className="text-5xl font-bold mb-6 text-black text-center">Blog Posts</h1>
+            <p className="text-lg text-gray-700 mb-12 text-center">
                 Check out my latest blog posts below!
             </p>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:justify-center items-center">
                 {/* Carousel or grid of blog posts will go here */}
                 { postIds.map((id) => {
                     const post = blogPosts[id];
                     if (!post) return null; // Skip if post not found
 
                     return (
-                        <div key={post.id} className="flex flex-col outline-1 p-5 mr-8 bg-black border-b pb-4 rounded-lg shadow transform transition-transform hover:scale-105 hover:shadow-lg">
+                        <div key={post.id} className="flex flex-col outline-1 p-5 sm:mr-8 bg-black border-b pb-4 rounded-lg shadow transform transition-transform hover:scale-105 hover:shadow-lg">
                             <Link href={`/blog/${post.id}`} className="block flex-1 max-w-[200px]">
                                 <h3 className="text-2xl font-semibold mb-2 truncate" title={post.title}>{post.title}</h3>
                                 <hr/>
