@@ -29,7 +29,7 @@ export default function IntroSectionView() {
           <a
             href="#portfolio"
             onClick={handlePortfolioClick}
-            className="basis-1/8 items-center justify-center m-5 p-5 outline-1 text-black bg-white transform transition-transform hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer rounded-lg shadow"
+            className="basis-1/8 items-center text-center justify-center m-5 p-5 outline-1 text-black bg-white transform transition-transform hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer rounded-lg shadow"
           >
             Portfolio
           </a>
